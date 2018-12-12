@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
-
+// 处理字符串
 class TrimStrings extends Middleware
 {
     /**
