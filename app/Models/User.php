@@ -51,6 +51,13 @@ class User extends Authenticatable
     {
         $this->notify(new ResetPassword($token));
     }
+
+    public function feed()
+    {
+        return $this->statuses()
+                    ->orderBy('created_at', 'desc');
+    }
+
     // 指明一个用户拥有多条微博
     public function statuses()
     {
