@@ -22,6 +22,6 @@ class StatusPolicy
 
     public function destroy(User $user, Status $status)
     {
-        return $user->id === $status->user_id;
+        return $user->id == $status->user_id;
     }
 }
