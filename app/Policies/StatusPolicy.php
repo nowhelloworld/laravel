@@ -15,10 +15,10 @@ class StatusPolicy
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
-    }
+    // public function __construct()
+    // {
+    //     //
+    // }
 
     public function destroy(User $user, Status $status)
     {
